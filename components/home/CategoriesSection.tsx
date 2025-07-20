@@ -9,8 +9,9 @@ const CategoriesSection = () => {
 
   return (
     <section
-      className=" w-full text-white px-6 pt-20 pb-10 bg-gray-900
-    flex flex-col items-center min-h-screen justify-center
+      className=" w-full text-white px-6 pt-20 pb-14 bg-gray-900
+    flex flex-col items-center 2xl:min-h-screen justify-center
+    sm:min-h-[calc(100vh + 56px)] min-h-screen
     "
     >
       <h2 className={`text-6xl ${spaceGrotesk.className} font-black mb-6`}>

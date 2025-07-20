@@ -3,8 +3,11 @@ import { HomeLinks } from "@/utils/links";
 import Link from "next/link";
 import React from "react";
 import SmallScreenSheetNav from "./SmallScreenSheetNav";
+import { getUser } from "@/actions/auth-actions";
+import { AvatarUserWithPopover } from "../AvatarUser";
 
-const Header = () => {
+const Header = async () => {
+  const user = await getUser();
   return (
     <header
       className="w-full fixed z-50 backdrop-blur-sm top-0 left-0 right-0 h-14 
@@ -13,7 +16,8 @@ const Header = () => {
     >
       {/* conatainer */}
       <div className="flex w-full h-full px-6 items-center justify-between">
-        <span></span>
+        {/* avatar profil */}
+        {user ? <AvatarUserWithPopover user={user} /> : <span />}
 
         {/* menu open small screen */}
         <SmallScreenSheetNav />

@@ -25,7 +25,7 @@ const Hero = () => {
           {/* top part */}
           <div className="flex flex-col gap-2 py-16 pb-10 px-6">
             <h1
-              className={`${spaceGrotesk.className} text-5xl lg:text-7xl 
+              className={`${spaceGrotesk.className} text-5xl md:text-6xl lg:text-7xl 
               xl:text-9xl
               font-black
               transition-all duration-500 ease-in-out
@@ -58,7 +58,7 @@ const Hero = () => {
           {/* bottom part */}
           <div className="mt-auto py-10 px-6 flex flex-col items-end ">
             <h1
-              className={`${spaceGrotesk.className} text-5xl lg:text-7xl  xl:text-9xl font-black
+              className={`${spaceGrotesk.className} text-5xl md:text-6xl lg:text-7xl  xl:text-9xl font-black
               transition-all duration-500 ease-in-out
               `}
             >
