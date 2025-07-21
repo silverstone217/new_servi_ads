@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button"; // shadcn/ui Button import
 import { ArrowRight } from "lucide-react";
 import { spaceGrotesk } from "@/lib/fonts";
+import Link from "next/link";
 
 const DiscoverSection = () => {
   return (
@@ -28,23 +29,27 @@ const DiscoverSection = () => {
       </p>
 
       <div className="flex gap-6">
-        <Button
-          variant="default"
-          className="flex items-center gap-2 px-10 py-5 rounded-2xl"
-        >
-          Voir nos services <ArrowRight size={20} />
-        </Button>
-        <Button
-          variant="outline"
-          className="flex items-center gap-2 px-10 py-5 rounded-2xl"
-        >
-          En savoir plus <ArrowRight size={20} />
-        </Button>
+        <Link href={"/publicites"}>
+          <Button
+            variant="default"
+            className="flex items-center gap-2 px-10 py-5 rounded-2xl"
+          >
+            Voir nos services <ArrowRight size={20} />
+          </Button>
+        </Link>
+        <Link href={"#"}>
+          <Button
+            variant="outline"
+            className="flex items-center gap-2 px-10 py-5 rounded-2xl"
+          >
+            En savoir plus <ArrowRight size={20} />
+          </Button>
+        </Link>
       </div>
 
       <div className="mt-10 w-full max-w-xl relative grid grid-cols-3 gap-4">
         <Image
-          src={pub8} // adapte le chemin selon ton dossier public
+          src={pub8}
           alt="Image promotionnelle Servi ADS"
           style={{ objectFit: "cover", borderRadius: 12 }}
           priority={false}
@@ -53,7 +58,7 @@ const DiscoverSection = () => {
           height={600}
         />
         <Image
-          src={pub5} // adapte le chemin selon ton dossier public
+          src={pub5}
           alt="Image promotionnelle Servi ADS"
           style={{ objectFit: "cover", borderRadius: 12 }}
           priority={false}
@@ -62,7 +67,7 @@ const DiscoverSection = () => {
           height={600}
         />
         <Image
-          src={pub7} // adapte le chemin selon ton dossier public
+          src={pub7}
           alt="Image promotionnelle Servi ADS"
           style={{ objectFit: "cover", borderRadius: 12 }}
           priority={false}

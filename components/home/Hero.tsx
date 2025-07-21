@@ -41,7 +41,7 @@ const Hero = () => {
               Booster votre activité personnelle ou professionnelle, avec de des
               meilleurs solutions publicitaires.
             </p>
-            <Link href={"#"}>
+            <Link href={"/publicites"}>
               <Button
                 className={`${oswald.className} w-52 lg:w-60 xl:w-72 rounded-xl mt-2 py-5 group`}
               >

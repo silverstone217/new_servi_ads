@@ -1,6 +1,11 @@
 import { TvMinimalPlay, Boxes, Earth } from "lucide-react";
 import { SiPagespeedinsights } from "react-icons/si";
 
+import pub9 from "@/public/images/pub9.jpg";
+import pub10 from "@/public/images/pub10.jpg";
+import pub11 from "@/public/images/pub11.jpg";
+import pub12 from "@/public/images/pub12.jpg";
+
 export const AdsData = [
   {
     title: "Visibilité Télévisuelle en Point de Vente",
@@ -19,6 +24,7 @@ export const AdsData = [
     ],
     slug: "televisuelle",
     Icon: TvMinimalPlay,
+    images: [pub11],
   },
   {
     title: "Publicité Personnalisée sur Emballages",
@@ -37,6 +43,7 @@ export const AdsData = [
     ],
     slug: "packaging",
     Icon: Boxes,
+    images: [pub9],
   },
   {
     title: "Publicité Digitale Multi-Canal",
@@ -55,6 +62,7 @@ export const AdsData = [
     ],
     slug: "publicite-digitale",
     Icon: Earth,
+    images: [pub12],
   },
   {
     title: "Affichage (Flyers)",
@@ -76,5 +84,6 @@ export const AdsData = [
 
     slug: "affichage",
     Icon: SiPagespeedinsights,
+    images: [pub10],
   },
 ];

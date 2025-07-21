@@ -1,4 +1,12 @@
-import { House, Clapperboard, Info, Headset } from "lucide-react";
+import {
+  House,
+  Clapperboard,
+  Info,
+  Headset,
+  Layers,
+  Kanban,
+  User,
+} from "lucide-react";
 
 export const HomeLinks = [
   {
@@ -7,8 +15,8 @@ export const HomeLinks = [
     Icon: House,
   },
   {
-    label: "Publictés",
-    value: "/publictes",
+    label: "Publicités",
+    value: "/publicites",
     Icon: Clapperboard,
   },
   {
@@ -20,5 +28,23 @@ export const HomeLinks = [
     label: "Contact",
     value: "/contact",
     Icon: Headset,
+  },
+];
+
+export const OtherLinks = [
+  {
+    label: "Dashboard",
+    value: "/dashboard",
+    Icon: Layers,
+  },
+  {
+    label: "Admins",
+    value: "/administrateurs",
+    Icon: Kanban,
+  },
+  {
+    label: "Profil",
+    value: "/profil",
+    Icon: User,
   },
 ];

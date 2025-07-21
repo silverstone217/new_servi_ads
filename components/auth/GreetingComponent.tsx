@@ -10,7 +10,7 @@ const GreetingComponent = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % QUOTES.length);
-    }, 25000);
+    }, 10000);
     return () => clearInterval(intervalId);
   }, []);
 

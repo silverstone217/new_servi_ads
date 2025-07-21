@@ -17,7 +17,7 @@ const CategoriesSection = () => {
       <h2 className={`text-6xl ${spaceGrotesk.className} font-black mb-6`}>
         Ce que nous proposons
       </h2>
-      <Link href={"#"}>
+      <Link href={"/publicites"}>
         <Button
           className="px-10 py-5 text-gray-950 rounded-2xl"
           variant={"outline"}
