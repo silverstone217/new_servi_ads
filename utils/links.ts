@@ -16,7 +16,7 @@ export const HomeLinks = [
   },
   {
     label: "Publicités",
-    value: "/publicites",
+    value: "/options-publicites",
     Icon: Clapperboard,
   },
   {

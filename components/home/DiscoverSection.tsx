@@ -29,7 +29,7 @@ const DiscoverSection = () => {
       </p>
 
       <div className="flex gap-6">
-        <Link href={"/publicites"}>
+        <Link href={"/options-publicites"}>
           <Button
             variant="default"
             className="flex items-center gap-2 px-10 py-5 rounded-2xl"
