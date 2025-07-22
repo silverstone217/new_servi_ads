@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 
-function AdsPage() {
+function page() {
   return (
     <>
       <div className="max-w-4xl mx-auto min-h-screen flex flex-col p-6 md:p-10">
@@ -50,4 +50,4 @@ function AdsPage() {
   );
 }
 
-export default AdsPage;
+export default page;
